@@ -1,0 +1,49 @@
+.home-page {
+  .top {
+    margin-top: 25px;
+
+    .user-stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 30px;
+
+      li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        span {
+          &:nth-child(1) {
+            font-size: 19px;
+            color: #9fa2b4;
+          }
+
+          &:nth-child(2) {
+            margin-top: 10px;
+            font-family: 'Roboto-Medium';
+            font-size: 40px;
+          }
+        }
+      }
+    }
+  }
+
+  .locations-map {
+    margin-top: 25px;
+  }
+
+  .chart-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 25px;
+    margin-top: 25px;
+
+    h4 {
+      text-align: center;
+    }
+
+    canvas {
+      margin-top: 20px;
+    }
+  }
+}
